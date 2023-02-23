@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="icon" type="image/x-icon" href="./images/favi.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -72,7 +73,7 @@
             <img
               src="./images/edit.svg"
               alt=""
-              height="24px"
+              height="24"
               class="project-title__image"
           /></a>
         </div>
@@ -101,114 +102,300 @@
 
     <!-- desktop> -->
     <div class="container container-lg">
-      <nav class="navigation"></nav>
-      <div class="board">
-        <div class="board-header">
-          <div class="header-notification">
-            <div class="header-notification__wrap position-relative">
-              <a href="#"
-                ><img
-                  class="header-notification__image"
-                  src="./images/Notification.svg"
-                  alt="notification"
-              /></a>
-              <span class="position-absolute header-notification__bage">
-                4</span
-              >
-            </div>
-          </div>
-
-          <div class="header-userpic">
-            <div class="header-userpic__wrap position-relative">
-              <a href="#"
-                ><img
-                  class="header-userpic__image"
-                  src="./images/userpic.png"
-                  alt="userpic"
-              /></a>
-            </div>
-          </div>
-
-          <div class="header-user__data">
-            <p class="header-user__name">Md Shuhan ($230.00)</p>
-            <p class="header-user__role">Creator</p>
-          </div>
-          <a href="#">
-            <img
-              class="header-arrowdown"
-              src="./images/arrowdown.svg"
-              alt="arrowdown"
-          /></a>
+      <nav class="navigation">
+        <div class="navigation-logo">
+          <img
+            class="navigation-logo__image"
+            src="./images/mainlogo.png"
+            alt=""
+          />
         </div>
+        <ul class="navigation-list list">
+          <li class="navigation-item item">
+            <a class="navigation-link" href="#">
+              <svg class="navigation-link__image">
+                <use href="./images/sprite.svg#icon-dashboard"></use>
+              </svg>
+              Dashboard
+            </a>
+          </li>
+          <li class="navigation-item item">
+            <a class="navigation-link" href="#">
+              <svg class="navigation-link__image">
+                <use href="./images/sprite.svg#icon-newproject"></use>
+              </svg>
+              New projects
+            </a>
+          </li>
+          <li class="navigation-item item">
+            <a class="navigation-link" href="#">
+              <svg class="navigation-link__image">
+                <use href="./images/sprite.svg#icon-task"></use>
+              </svg>
+              Task
+            </a>
+          </li>
+          <li class="navigation-item item">
+            <a class="navigation-link" href="#">
+              <svg class="navigation-link__image">
+                <use href="./images/sprite.svg#icon-settings"></use>
+              </svg>
+              Settings
+            </a>
+          </li>
+          <li class="navigation-item item">
+            <a class="navigation-link" href="#">
+              <svg class="navigation-link__image">
+                <use href="./images/sprite.svg#icon-help"></use>
+              </svg>
+              Help
+            </a>
+          </li>
+          <li class="navigation-item item">
+            <a class="navigation-link" href="#">
+              <svg class="navigation-link__image">
+                <use href="./images/sprite.svg#icon-logout"></use>
+              </svg>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="board">
+        <div class="board-projects">
+          <div class="board-header">
+            <div class="header-notification">
+              <div class="header-notification__wrap position-relative">
+                <a href="#"
+                  ><img
+                    class="header-notification__image"
+                    src="./images/Notification.svg"
+                    alt="notification"
+                /></a>
+                <span class="position-absolute header-notification__bage">
+                  4</span
+                >
+              </div>
+            </div>
 
-        <div class="board-table">
-          <div class="board-table__header">
-            <h2 class="board-table__title">Posted Projects</h2>
+            <div class="header-userpic">
+              <div class="header-userpic__wrap position-relative">
+                <a href="#"
+                  ><img
+                    class="header-userpic__image"
+                    src="./images/userpic.png"
+                    alt="userpic"
+                /></a>
+              </div>
+            </div>
+
+            <div class="header-user__data">
+              <p class="header-user__name">Md Shuhan ($230.00)</p>
+              <p class="header-user__role">Creator</p>
+            </div>
+            <a href="#">
+              <img
+                class="header-arrowdown"
+                src="./images/arrowdown.svg"
+                alt="arrowdown"
+            /></a>
           </div>
-          <!-- SEARCHBAR -->
-          <div class="row search-bar">
-            <div class="col-5">
-              <div class="form-group has-search">
-                <span class="fa fa-search form-control-feedback"></span>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Search projects"
-                />
+          <div class="board-content">
+            <div class="board-table">
+              <div class="board-table__header">
+                <h2 class="board-table__title">Posted Projects</h2>
+              </div>
+              <!-- SEARCHBAR -->
+              <div class="row search-bar">
+                <div class="col-5">
+                  <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search projects"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- TABLE -->
+              <table class="table table-borderless">
+                <thead class="table-head">
+                  <tr>
+                    <th scope="col">Project</th>
+                    <th scope="col">Deadline</th>
+                    <th scope="col">Package</th>
+                    <th scope="col" class="righted">Est. Earnings</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <th scope="row">
+                      4 2D Product Videos For Pentacodes IT Solutions
+                    </th>
+                    <td>Jan 20, 2023</td>
+                    <td>2D Product Video</td>
+                    <td class="righted">$40</td>
+                    <td>
+                      <a class="table-editimage" href="#">
+                        <svg class="table-editimage__image">
+                          <use href="./images/sprite.svg#icon-edit"></use></svg
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      4 2D Product Videos For Pentacodes IT Solutions
+                    </th>
+                    <td>Jan 20, 2023</td>
+                    <td>2D Product Video</td>
+                    <td class="righted">$40</td>
+                    <td>
+                      <a class="table-editimage" href="#">
+                        <svg class="table-editimage__image">
+                          <use href="./images/sprite.svg#icon-edit"></use></svg
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      4 2D Product Videos For Pentacodes IT Solutions
+                    </th>
+                    <td>Jan 20, 2023</td>
+                    <td>2D Product Video</td>
+                    <td class="righted">$40</td>
+                    <td>
+                      <a class="table-editimage" href="#">
+                        <svg class="table-editimage__image">
+                          <use href="./images/sprite.svg#icon-edit"></use></svg
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      4 2D Product Videos For Pentacodes IT Solutions
+                    </th>
+                    <td>Jan 20, 2023</td>
+                    <td>2D Product Video</td>
+                    <td class="righted">$40</td>
+                    <td>
+                      <a class="table-editimage" href="#">
+                        <svg class="table-editimage__image">
+                          <use href="./images/sprite.svg#icon-edit"></use></svg
+                      ></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      4 2D Product Videos For Pentacodes IT Solutions
+                    </th>
+                    <td>Jan 20, 2023</td>
+                    <td>2D Product Video</td>
+                    <td class="righted">$40</td>
+                    <td>
+                      <a class="table-editimage" href="#">
+                        <svg class="table-editimage__image">
+                          <use href="./images/sprite.svg#icon-edit"></use></svg
+                      ></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="board-footer">
+                <div class="board-paginator">
+                  <a class="board-footer__leftarr" href="#">
+                    <svg class="board-footer__leftarrpic">
+                      <use href="./images/sprite.svg#icon-leftarr"></use>
+                    </svg>
+                    <p class="board-footer__prevtext">Previous</p>
+                  </a>
+
+                  <p class="board-footer__counter">1 of 3</p>
+
+                  <a class="board-footer__rightarr" href="#">
+                    <p class="board-footer__nexttext">Next</p>
+                    <svg class="board-footer__rightarrpic">
+                      <use href="./images/sprite.svg#icon-rightarr"></use></svg
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="board-details hide">
+              <!-- details-header -->
+              <div class="board-details__header">
+                <div class="board-details__button--back">
+                  <svg class="board-details__longarrback">
+                    <use href="./images/sprite.svg#icon-longarrback"></use>
+                  </svg>
+                </div>
+                <div class="board-details__wrap">
+                  <h3 class="board-details__title">
+                    4 2D Product Videos For Pentacodes IT Solutions
+                  </h3>
+                  <a class="board-details__edit" href="#">
+                    <svg class="board-details__editpic">
+                      <use href="./images/sprite.svg#icon-edit"></use></svg
+                  ></a>
+                </div>
+              </div>
+              <!-- details info block -->
+              <div class="board-details__info">
+                <div class="board-details__infoblock">
+                  <h4 class="board-details__infotitle">Quantity</h4>
+                  <p class="board-details__infodata">5 minutes</p>
+                </div>
+                <div class="board-details__infoblock">
+                  <h4 class="board-details__infotitle">Deadline</h4>
+                  <p class="board-details__infodata">5 20 Jan, 2023</p>
+                </div>
+                <div class="board-details__infoblock">
+                  <h4 class="board-details__infotitle">Budget</h4>
+                  <p class="board-details__infodata">$50</p>
+                </div>
+                <div class="board-details__infoblock">
+                  <h4 class="board-details__infotitle">Est. Earnings</h4>
+                  <p class="board-details__infodata">$50</p>
+                </div>
+                <div class="board-details__infoblock">
+                  <h4 class="board-details__infotitle">Package</h4>
+                  <p class="board-details__infodata lighted">
+                    2D Product Video
+                  </p>
+                </div>
+              </div>
+              <!-- details brief block -->
+              <div class="details-brief">
+                <h4 class="details-brief__title">Brief</h4>
+                <p class="details-brief__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took. Lorem Ipsum is simply dummy text of the printing
+                  and typese.
+                </p>
+              </div>
+              <!-- details jobs block -->
+              <div class="details-jobs">
+                <h4 class="details-jobs__title">Jobs</h4>
+                <ol>
+                  <li class="details-jobs__item">
+                    <p class="details-jobs__text">4 2D Product Video 1</p>
+                    <p class="details-jobs__price">$20</p>
+                  </li>
+                  <li class="details-jobs__item">
+                    <p class="details-jobs__text">4 2D Product Video 1</p>
+                    <p class="details-jobs__price">$15</p>
+                  </li>
+                  <li class="details-jobs__item">
+                    <p class="details-jobs__text">4 2D Product Video 1</p>
+                    <p class="details-jobs__price">$15</p>
+                  </li>
+                </ol>
               </div>
             </div>
           </div>
-
-          <!-- TABLE -->
-          <table class="table table-borderless">
-            <thead class="table-head">
-              <tr>
-                <th scope="col">Project</th>
-                <th scope="col">Deadline</th>
-                <th scope="col">Package</th>
-                <th scope="col">Est. Earnings</th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">
-                  4 2D Product Videos For Pentacodes IT Solutions
-                </th>
-                <td>Jan 20, 2023</td>
-                <td>2D Product Video</td>
-                <td>$40</td>
-                <td>btn</td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  4 2D Product Videos For Pentacodes IT Solutions
-                </th>
-                <td>Jan 20, 2023</td>
-                <td>2D Product Video</td>
-                <td>$40</td>
-                <td>btn</td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  4 2D Product Videos For Pentacodes IT Solutions
-                </th>
-                <td>Jan 20, 2023</td>
-                <td>2D Product Video</td>
-                <td>$40</td>
-                <td>btn</td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  4 2D Product Videos For Pentacodes IT Solutions
-                </th>
-                <td>Jan 20, 2023</td>
-                <td>2D Product Video</td>
-                <td>$40</td>
-                <td>btn</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>
@@ -218,5 +405,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
