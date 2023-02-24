@@ -727,6 +727,10 @@ body {
     margin-right: 5px;
   }
 
+  .search-bar--sm {
+    display: none;
+  }
+
   /* end board-footer */
   /* board details desktop */
   .board-details {
@@ -778,11 +782,8 @@ body {
     color: #ef5537;
   }
 
-  .board-details__infoblock:last-child {
-  }
-
   .details-brief {
-    width: 844px;
+    max-width: 844px;
     display: flex;
     flex-direction: column;
     margin-bottom: 12px;
