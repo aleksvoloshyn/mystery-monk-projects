@@ -46,6 +46,27 @@ body {
 .hide {
   display: none;
 }
+.navigation {
+  display: none;
+}
+.board-header {
+  display: none;
+}
+
+.board-content {
+  display: block;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 18px;
+}
+
+.board-table__header {
+  display: none;
+}
 
 .container {
   width: 375px;
@@ -145,10 +166,19 @@ body {
 
 .search-bar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
 }
 
+.search-bar--lg {
+  display: none;
+}
+.has-search {
+  width: 296px;
+
+  margin-right: 26px;
+}
 .has-search .form-control {
   padding-left: 2.375rem;
 }
@@ -225,16 +255,25 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
-  .container-sm {
+  /* .container-sm {
     display: none;
   }
 
   .container-lg {
     display: flex;
+  } */
+
+  .header {
+    display: none;
+  }
+
+  .projects {
+    display: none;
   }
 
   .container {
     width: 1440px;
+    display: flex;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
@@ -242,6 +281,7 @@ body {
   }
   /* nav */
   .navigation {
+    display: block;
     width: 270px;
     background-color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -409,8 +449,6 @@ body {
 
   /* board-table */
   .board-content {
-    background: #ffffff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding-right: 24px;
     padding-left: 24px;
@@ -440,7 +478,17 @@ body {
   }
 
   .search-bar {
-    margin-bottom: 24px;
+    width: 444px;
+  }
+  .search-bar--sm {
+    display: none;
+  }
+  .search-bar--lg {
+    display: block;
+  }
+
+  .search-bar__options {
+    display: none;
   }
 
   .board-table__thead {

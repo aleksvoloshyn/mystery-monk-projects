@@ -11,11 +11,12 @@ editButton.forEach((i) => {
     boardTable.classList.toggle('hide')
     boardDetailsPage.classList.toggle('hide')
     project.classList.toggle('hide')
-    searchBar.classList.toggle('hide')
+    searchBar.style.display = 'none'
   })
 })
 
 detailsBackButton.addEventListener('click', () => {
   boardTable.classList.toggle('hide')
   boardDetailsPage.classList.toggle('hide')
+  searchBar.style.display = 'flex'
 })
