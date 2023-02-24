@@ -20,5 +20,7 @@ editButton.forEach((i) => {
 detailsBackButton.addEventListener('click', () => {
   boardTable.classList.toggle('hide')
   boardDetailsPage.classList.toggle('hide')
+  projects.classList.toggle('hide')
   searchBar.style.display = 'flex'
+  // searchBar.style.display = 'flex'
 })
