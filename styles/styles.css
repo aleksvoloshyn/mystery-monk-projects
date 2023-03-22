@@ -277,7 +277,10 @@ body {
 .board-details__infoblock:last-child p {
   color: #ef5537;
 }
-
+.details-jobs__item {
+  display: flex;
+  justify-content: space-between;
+}
 /* .lighted {
   color: #ef5537;
 } */
@@ -297,11 +300,34 @@ body {
   font-weight: 600;
 }
 
+.details-proposal {
+  margin-bottom: 22px;
+}
+
+.details-proposals__headerpic {
+  height: fit-content;
+}
+.details-proposals__headerwrap {
+  display: flex;
+  justify-content: space-between;
+}
+.details-proposals__headertop {
+  order: 2;
+}
+
+.details-proposals__headerdown {
+  margin-bottom: 10px;
+}
+
+.details-proposals__button {
+  width: 100%;
+  margin-top: 10px;
+}
+
 /* end board details */
 
 /* projects */
-.projects {
-}
+
 .project {
   background: #ffffff;
   border-radius: 10px;
@@ -357,6 +383,10 @@ body {
 
 .container-lg {
   display: none;
+}
+
+.details-proposals__stars {
+  display: flex;
 }
 
 .edit-image {
@@ -875,8 +905,6 @@ body {
     color: #595f68;
   }
 
-  .details-proposals {
-  }
   .details-proposal {
     padding: 24px 24px 18px 24px;
     background: #fafafa;
