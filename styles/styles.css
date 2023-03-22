@@ -359,6 +359,42 @@ body {
   display: none;
 }
 
+.edit-image {
+  animation: 1.5s blinker linear infinite;
+}
+@keyframes blinker {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.5;
+    fill: #08376a;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.edit-image:hover {
+  fill: tomato;
+}
+
+.board-details__longarrback {
+  animation: 1.5s blinkerback linear infinite;
+}
+
+@keyframes blinkerback {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   /* .container-sm {
     display: none;

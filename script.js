@@ -21,11 +21,4 @@ detailsBackButton.addEventListener('click', () => {
   boardTable.classList.toggle('hide')
   boardDetailsPage.classList.toggle('hide')
   projects.classList.toggle('hide')
-  searchBarMobile.style.display = 'flex'
-
-  if (screen.width < 1440) {
-    searchBarMobile.style.display = 'flex'
-  } else {
-    searchBarMobile.style.display = 'none'
-  }
 })
